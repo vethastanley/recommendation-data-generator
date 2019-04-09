@@ -1,0 +1,41 @@
+{
+  "userprofile": {
+    "dynamic": true,
+    "_source": {
+      "enabled": true
+    },
+    "_all": {
+      "enabled": false
+    },
+    "properties": {
+      "user": {
+        "type": "keyword",
+        "index": true
+      },
+      "apis": {
+        "type": "nested",
+        "dynamic": true,
+        "properties": {
+          "api": {
+            "type": "keyword",
+            "index": true
+          },
+          "actions": {
+            "type": "nested",
+            "dynamic": true,
+            "properties": {
+              "action": {
+                "type": "keyword",
+                "index": true
+              },
+              "value": {
+                "type": "integer",
+                "index": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

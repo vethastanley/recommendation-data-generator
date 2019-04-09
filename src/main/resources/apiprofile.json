@@ -1,0 +1,21 @@
+{
+  "apiprofile": {
+    "dynamic": true,
+    "_source": {
+      "enabled": true
+    },
+    "_all": {
+      "enabled": false
+    },
+    "properties": {
+      "api": {
+        "type": "keyword",
+        "index": true
+      },
+      "weight": {
+        "type": "integer",
+        "index": true
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "userprofileevents": {
+    "dynamic": true,
+    "_source": {
+      "enabled": true
+    },
+    "_all": {
+      "enabled": false
+    },
+    "properties": {
+      "actor": {
+        "type": "keyword",
+        "index": true
+      },
+      "action": {
+        "type": "keyword",
+        "index": true
+      },
+      "api": {
+        "type": "keyword",
+        "index": true
+      },
+      "actionValue": {
+        "type": "integer",
+        "index": true
+      },
+      "time": {
+        "type": "date",
+        "index": true
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "apidefinition": {
+    "dynamic": true,
+    "_source": {
+      "enabled": true
+    },
+    "_all": {
+      "enabled": false
+    },
+    "properties": {
+      "id": {
+        "type": "keyword",
+        "index": true
+      },
+      "name": {
+        "type": "keyword",
+        "index": true
+      },
+      "description": {
+        "type": "keyword",
+        "index": true
+      },
+      "image": {
+        "type": "keyword",
+        "index": true
+      }
+    }
+  }
+}
